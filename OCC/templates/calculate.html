@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+
     <title>CGPA-calculator</title>
 </head>
 
@@ -12,6 +16,205 @@
     <center>
         <h1>Welcome to CGPA calculator</h1>
     </center>
+
+    <div class="container" style="top:50px; position:relative;">
+        <center>
+
+            <form class="full" method="POST" action="">
+                {% csrf_token %}
+                <!-- 1st semester -->
+                <div class="col-sm-3 my-1">
+                    <label class="sr-only" for="s1">sgpa of 1st semester</label>
+                    <input type="text" class="form-control" id="s1" name="s1" placeholder="sgpa of 1st semester"
+                        required>
+                </div>
+
+                <div class="col-sm-3 my-1">
+                    <label class="sr-only" for="c1">1st semester's credit</label>
+                    <input type="text" class="form-control" id="c1" name="c1" placeholder="credit of 1st semester"
+                        required>
+                </div>
+
+                <br>
+
+                <!-- 2nd semester -->
+                <div class="col-sm-3 my-1">
+                    <label class="sr-only" for="s2">sgpa of 2nd semester</label>
+                    <input type="text" class="form-control" id="s2" name='s2' placeholder="sgpa of 2nd semester"
+                        required>
+                </div>
+
+                <div class="col-sm-3 my-1">
+                    <label class="sr-only" for="c2">2nd semester's credit</label>
+                    <input type="text" class="form-control" id="c2" name='c2' placeholder="credit of 2nd semester"
+                        required>
+                </div>
+                <br>
+
+                <!-- 3rd semester -->
+                <div class="col-sm-3 my-1">
+                    <label class="sr-only" for="s3">sgpa of 3rd semester</label>
+                    <input type="text" class="form-control" id="s3" name="s3" placeholder="sgpa of 3rd semester"
+                        required>
+                </div>
+
+                <div class="col-sm-3 my-1">
+                    <label class="sr-only" for="c3">3rd semester's credit</label>
+                    <input type="text" class="form-control" id="c3" name="c3" placeholder="credit of 3rd semester"
+                        required>
+                </div>
+                <br>
+
+                <!-- 4th semester -->
+                <div class="col-sm-3 my-1">
+                    <label class="sr-only" for="s4">sgpa of 4th semester</label>
+                    <input type="text" class="form-control" id="s4" name='s4' placeholder="sgpa of 4th semester"
+                        required>
+                </div>
+
+                <div class="col-sm-3 my-1">
+                    <label class="sr-only" for="c4">4th semester's credit</label>
+                    <input type="text" class="form-control" id="c4" name='c4' placeholder="credit of 4th semester"
+                        required>
+                </div>
+                <br>
+
+                <!-- 5th semester -->
+                <div class="col-sm-3 my-1">
+                    <label class="sr-only" for="s5">sgpa of 5th semester</label>
+                    <input type="text" class="form-control" id="s5" name='s5' placeholder="sgpa of 5th semester"
+                        required>
+                </div>
+
+                <div class="col-sm-3 my-1">
+                    <label class="sr-only" for="c5">5th semester's credit</label>
+                    <input type="text" class="form-control" id="c5" name='c5' placeholder="credit of 5th semester"
+                        required>
+                </div>
+                <br>
+
+                <!-- 6th semester -->
+                <div class="col-sm-3 my-1">
+                    <label class="sr-only" for="s6">sgpa of 6th semester</label>
+                    <input type="text" class="form-control" id="s6" name="s6" placeholder="sgpa of 6th semester"
+                        required>
+                </div>
+
+                <div class="col-sm-3 my-1">
+                    <label class="sr-only" for="c6">6th semester's credit</label>
+                    <input type="text" class="form-control" id="c6" name='c6' placeholder="credit of 6th semester"
+                        required>
+                </div>
+                <br>
+
+                <!-- 7th semester -->
+                <div class="col-sm-3 my-1">
+                    <label class="sr-only" for="s7">sgpa of 7th semester</label>
+                    <input type="text" class="form-control" id="s7" name='s7' placeholder="sgpa of 7th semester"
+                        required>
+                </div>
+
+                <div class="col-sm-3 my-1">
+                    <label class="sr-only" for="c7">7th semester's credit</label>
+                    <input type="text" class="form-control" id="c7" name='c7' placeholder="credit of 7th semester"
+                        required>
+                </div>
+                <br>
+
+                <!-- 8th semester -->
+                <div class="col-sm-3 my-1">
+                    <label class="sr-only" for="s8">sgpa of 8th semester</label>
+                    <input type="text" class="form-control" id="s8" name='s8' placeholder="sgpa of 8th semester"
+                        required>
+                </div>
+
+                <div class="col-sm-3 my-1">
+                    <label class="sr-only" for="c8">8th semester's credit</label>
+                    <input type="text" class="form-control" id="c8" name='c8' placeholder="credit of 8th semester"
+                        required>
+                </div>
+                <br>
+
+                <!-- 9th semester -->
+                <div class="col-sm-3 my-1">
+                    <label class="sr-only" for="s9">sgpa of 9th semester</label>
+                    <input type="text" class="form-control" id="s9" name='s9' placeholder="sgpa of 9th semester"
+                        required>
+                </div>
+
+                <div class="col-sm-3 my-1">
+                    <label class="sr-only" for="c9">9th semester's credit</label>
+                    <input type="text" class="form-control" id="c9" name='c9' placeholder="credit of 9th semester"
+                        required>
+                </div>
+                <br>
+
+                <!-- 10th semester -->
+                <div class="col-sm-3 my-1">
+                    <label class="sr-only" for="s10">sgpa of 10th semester</label>
+                    <input type="text" class="form-control" id="s10" name='s10' placeholder="sgpa of 10th semester"
+                        required>
+                </div>
+
+                <div class="col-sm-3 my-1">
+                    <label class="sr-only" for="c10">10th semester's credit</label>
+                    <input type="text" class="form-control" id="c10" name='c10' placeholder="credit of 10th semester"
+                        required>
+                </div>
+                <br>
+
+                <!-- 11th semester -->
+                <div class="col-sm-3 my-1">
+                    <label class="sr-only" for="s11">sgpa of 11th semester</label>
+                    <input type="text" class="form-control" id="s11" name='s11' placeholder="sgpa of 11th semester"
+                        required>
+                </div>
+
+                <div class="col-sm-3 my-1">
+                    <label class="sr-only" for="c11">11th semester's credit</label>
+                    <input type="text" class="form-control" id="c11" name='c11' placeholder="credit of 11th semester"
+                        required>
+                </div>
+                <br>
+
+                <!-- 12th semester -->
+                <div class="col-sm-3 my-1">
+                    <label class="sr-only" for="s12">sgpa of 12th semester</label>
+                    <input type="text" class="form-control" id="s12" name='s12' placeholder="sgpa of 12th semester"
+                        required>
+                </div>
+
+                <div class="col-sm-3 my-1">
+                    <label class="sr-only" for="c12">12th semester's credit</label>
+                    <input type="text" class="form-control" id="c12" name='c12' placeholder="credit of 12th semester"
+                        required>
+                </div>
+
+                <div class="col-auto my-1">
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </div>
+                <h2 style="text-align:center;color:rgba(255, 35, 71, 0.863);position:relative;top:-800px;right:-600px">
+                    CGPA is :
+                    {{cgpa}}</h2>
+            </form>
+
+
+        </center>
+
+    </div>
+
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
 </body>
+
 
 </html>
